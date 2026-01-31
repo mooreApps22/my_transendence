@@ -32,8 +32,8 @@ logs:
 	docker compose $(ENV) -f $(YAM) logs
 logs_mariadb:
 	docker logs mariadb
-logs_wordpress:
-	docker logs wordpress 
+logs_node:
+	docker logs node
 logs_nginx:
 	docker logs nginx
 prune:
@@ -41,7 +41,7 @@ prune:
 open_nginx:
 	docker exec -it nginx /bin/sh
 open_wordpress:
-	docker exec -it wordpress /bin/sh
+	docker exec -it node /bin/sh
 open_mariadb:
 	docker exec -it mariadb /bin/sh
 ls_volumes:
