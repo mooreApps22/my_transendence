@@ -1,29 +1,23 @@
-document.getElementById("myH1").textContent = "Hi Pimp";
+document.getElementById("myH1").textContent = "Transend!";
 
-let x = "It's hard out here for a pimp!";
-let y = "When you trying to make the money for the rent.";
-
-document.getElementById("myP1").textContent = x;
-document.getElementById("myP2").textContent = y;
-
-let age = 25;
-let msg = `The average age is ${age}.`;
-
-console.log(msg);
-console.log(typeof age);
+let x = "This is the transendence project!";
+let y = "42 is in London.";
+let z = "But, I'm study remotely in L.A." 
 
 let firstName = "Skyy";
 let lastName = "Moore";
 let name = `${firstName} ${lastName}`;
 
-console.log(`My name is ${name}`);
-
 let online = false;
 
 if (online)
-	console.log(`${name} is online: ${online}`);
+{
+	document.getElementById("p1").textContent = x;
+	document.getElementById("p2").textContent = y;
+	document.getElementById("p3").textContent = z;
+}
 else
-	console.log(`${name} is offline: ${online}`);
-	
-
-
+{
+	z = `${name} is not here right now`;
+	document.getElementById("p3").textContent = z;
+}
