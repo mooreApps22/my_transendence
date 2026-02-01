@@ -74,5 +74,10 @@ test_port_80_2:
 eval_ssh_add:
 	eval "$(ssh-agent -s)"
 	ssh-add ~/.ssh/id_ed25519
+set_vars:
+	echo "This is for fish shell"
+	set style srcs/requirements/node/app/public/style.css
+	set app srcs/requirements/node/app/public/app.js
+	set index srcs/requirements/node/app/public/index.html
 
 .PHONY: all secrets data

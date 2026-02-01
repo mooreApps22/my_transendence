@@ -1,6 +1,9 @@
 body{
-	font-family: "Oswald";
+	font-family: "Press Start 2P";
 	font-size: 24px;
+}
+h1 {
+	text-align: center;
 }
 
 p {
