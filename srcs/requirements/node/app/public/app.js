@@ -1,11 +1,5 @@
-console.log("app.js loaded");
+console.log("Hello, from the Client!");
+console.log(`It's fresh time.`);
+window.alert(`This is an alert!`);
+window.alert(`It's fresh time!`);
 
-let count = 0;
-
-const btn = document.getElementById("btn");
-
-btn.addEventListener("click", () => {
-	count++;
-	console.log("Button clicked", count);
-	btn.textContent = `Clicked ${count} times`;
-});

@@ -40,7 +40,7 @@ prune:
 	docker builder prune --all
 open_nginx:
 	docker exec -it nginx /bin/sh
-open_wordpress:
+open_node:
 	docker exec -it node /bin/sh
 open_mariadb:
 	docker exec -it mariadb /bin/sh
