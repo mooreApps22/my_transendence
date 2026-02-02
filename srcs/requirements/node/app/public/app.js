@@ -1,23 +1,15 @@
-document.getElementById("myH1").textContent = "Transend!";
 
-let x = "This is the transendence project!";
-let y = "42 is in London.";
-let z = "But, I'm study remotely in L.A." 
-
-let firstName = "Skyy";
-let lastName = "Moore";
-let name = `${firstName} ${lastName}`;
-
-let online = false;
-
-if (online)
+function putElement(id, text)
 {
-	document.getElementById("p1").textContent = x;
-	document.getElementById("p2").textContent = y;
-	document.getElementById("p3").textContent = z;
+	document.getElementById(id).textContent = text;
 }
-else
-{
-	z = `${name} is not here right now`;
-	document.getElementById("p3").textContent = z;
-}
+
+let num;
+
+num = window.prompt("What is the name of the school?");
+
+putElement("myH1", "Transendence");
+putElement("p1", "By Skyy Moore");
+putElement("p2", `This is a ${num} Project.`);
+putElement("p3", "Isn't it cool?");
+
