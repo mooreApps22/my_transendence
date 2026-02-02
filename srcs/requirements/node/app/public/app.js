@@ -5,11 +5,17 @@ function putElement(id, text)
 }
 
 let num;
+let filledOut = false;
 
-num = window.prompt("What is the name of the school?");
+putElement("myTextLabel", "Name:");
+putElement("btn", "submit");
 
 putElement("myH1", "Transendence");
 putElement("p1", "By Skyy Moore");
-putElement("p2", `This is a ${num} Project.`);
 putElement("p3", "Isn't it cool?");
+document.getElementById("btn").onclick = function(){
+	num = document.getElementById("user_input").value;	
+	console.log(num);
+	putElement("p2", `This is a ${num} Project.`);
+}; 
 

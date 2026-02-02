@@ -23,3 +23,11 @@ h1 {
 p {
 	text-align: center;
 }
+
+input{
+	font-family: "Press Start 2P";
+}
+button{
+	font-family: "Press Start 2P";
+	background-color gray;
+}
